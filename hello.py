@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, url_for
 app = Flask(__name__)
 
 # Basic routing 
@@ -37,11 +37,10 @@ def about():
     return 'the about page'
 
 # http Requests
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        # do the login
-    else 
-        # show the login form
+# @app.route('/login', methods=['GET', 'POST'])
+# def login():
+    # if request.method == 'POST':
+        # # do the login
+    # else:
+        # # show the login form
 
