@@ -6,6 +6,5 @@ DATABASES = {
         'PASSWORD': 'testpw',
         'HOST': 'localhost',
         'PORT': '5000',
-
     }
 }
