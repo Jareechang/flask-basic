@@ -15,5 +15,15 @@ with app.test_request_context('/hello', method='POST'):
     assert request.path == '/hello'
     assert request.method == 'POST'
 
+@app.route('/login', methods=['GET', 'POST'])
 
+def login():
+    error = None
+    if request.method == 'POST':
+        if valid_login(request.form['username'],
+                       request.form['password']):
+            return log_the_user_in(request.form['username'])
+        else:
+            error = 'Invalid username or password'
 
+    return render_template('login.html', error)
