@@ -13,13 +13,13 @@ To get started run:
 
 **Included NPM scripts:** 
 
-1. Production - building **assets** into a **static** folder to be used in production
+1. **Production** - building **assets** into a **static** folder to be used in production
 
 ```
 npm run build
 ```
 
-2. Development - live-reload/watch scripts for **javascript files** and **sass styles**.
+2. **Development** - live-reload/watch scripts for **javascript files** and **sass styles**.
 ```
 npm run start
 ```
