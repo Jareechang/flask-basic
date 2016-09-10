@@ -6,9 +6,14 @@ from myproject import app
 def index():
     return "Index page"
 
+
 @app.route('/hello')
 def hello():
     return "hello"
+
+@app.route('/hello/<name>')
+def hello_name(name=None):
+    return render_template('hello.html', name=name)
 
 @app.route('/template')
 def template():
