@@ -9,7 +9,7 @@ To get started run:
 `npm install`
 
 3. Run server
-`python run flask`
+`flask run --host=0.0.0.0`
 
 **Included NPM scripts:** 
 
@@ -21,7 +21,7 @@ npm run build
 
 2. **Development** - live-reload/watch scripts for **javascript files** and **sass styles**.
 ```
-npm run start
+npm run watch 
 ```
 
 **note**: webpack react scripts is served on *localhost:8080*
