@@ -1,6 +1,8 @@
 from flask import render_template 
 from myproject import app
 
+import os
+
 # Basic routing 
 @app.route('/')
 def index():
@@ -21,5 +23,6 @@ def template():
     return render_template(
         'index.html',
         title='Home',
+        FLASK_ENV=app.config['FLASK_ENV'],
         user=user
     )

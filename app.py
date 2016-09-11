@@ -4,7 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 from myproject import views
 from myproject import app 
 
-# import views
-app.config.from_pyfile('config.py')
+# load file specified by APP_CONFIG_FILE
+# -- contains environment specific variables (production, development..etc)
+app.config.from_envvar('APP_CONFIG_FILE')
+
 db = SQLAlchemy(app)
 

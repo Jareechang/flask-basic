@@ -1,2 +1,9 @@
+import React, {Component} from 'react';
 
-console.log("hi");
+class App extends Component {
+  render() {
+    return <p>this is not</p>
+  }
+}
+
+export default App;
