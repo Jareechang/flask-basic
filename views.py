@@ -1,13 +1,10 @@
 from flask import render_template 
 from myproject import app
 
-import os
-
-# Basic routing 
-@app.route('/')
-def index():
-    return "Index page"
-
+# Route templates 
+# @app.route('/')
+# def index():
+    # return "Index page"
 
 @app.route('/hello')
 def hello():
